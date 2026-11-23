@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark" data-lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -314,9 +314,9 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
 
@@ -345,7 +345,6 @@
             <div class="nav-controls">
                 <button class="icon-btn" id="sound-btn"><i class="fa-solid fa-volume-high"></i></button>
                 <button class="icon-btn" id="theme-btn"><i class="fa-solid fa-moon"></i></button>
-                <button class="lang-btn" id="lang-btn"><span id="lang-indicator">EN</span></button>
                 <a href="join.html" class="btn-primary"><i class="fa-solid fa-user-plus"></i> Join Club</a>
                 <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
             </div>
@@ -354,7 +353,7 @@
 
     <main>
         <section class="page-banner">
-            <h1 class="page-title" data-en="Event Participation Certificate Portal" data-bn="পার্টিসিপেশন সার্টিফিকেট পোর্টাল">Event Participation Certificate Portal</h1>
+            <h1 class="page-title">Event Participation Certificate Portal</h1>
             <p class="page-subtitle">Verify & Generate Official DCSC Certificates</p>
         </section>
 
@@ -427,13 +426,56 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" style="position:relative;">
+        <div class="footer-container" style="max-width:1250px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:40px;margin-bottom:40px;">
+            <div class="footer-col">
+                <div class="footer-logo" style="display:flex;align-items:center;gap:14px;margin-bottom:18px;">
+                    <div style="display:flex;align-items:center;gap:6px;">
+                        <img src="image/dhaka-college-logo.avif" alt="Dhaka College Logo" style="width:44px;height:50px;object-fit:contain;flex-shrink:0;display:block;">
+                        <div style="width:1px;height:36px;background:rgba(255,255,255,0.2);flex-shrink:0;margin:0 4px;"></div>
+                        <img src="image/logo.png" alt="DCSC Logo" style="width:44px;height:50px;object-fit:contain;flex-shrink:0;display:block;" onerror="this.src='image/logo.svg'">
+                    </div>
+                    <div>
+                        <span style="font-family:'Orbitron',sans-serif;font-weight:800;font-size:0.7rem;letter-spacing:2px;color:#FFFFFF;line-height:1.3;text-transform:uppercase;display:block;">Dhaka College</span>
+                        <span style="font-family:'Orbitron',sans-serif;font-weight:700;font-size:0.65rem;letter-spacing:2px;color:var(--cyan-glow);text-shadow:0 0 10px rgba(0,242,254,0.5);line-height:1.3;text-transform:uppercase;display:block;">Science Club</span>
+                    </div>
+                </div>
+                <p style="color:var(--text-secondary);font-family:'Plus Jakarta Sans',sans-serif;font-size:0.88rem;line-height:1.75;margin:0 0 8px;">Spreading the knowledge of science to the utmost since 1996.<br><span style="color:var(--gold-accent);font-weight:700;">#ForClubAndCountry</span></p>
+                <p style="color:var(--text-muted);font-family:'Plus Jakarta Sans',sans-serif;font-size:0.78rem;line-height:1.6;margin:0 0 18px;">This website is made by <a href="https://adi.pro.bd/" target="_blank" style="color:var(--cyan-glow);text-decoration:none;font-weight:600;">Abdullah Al Adib</a></p>
+                <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                    <a href="https://www.facebook.com/dcsc.dc/" target="_blank" title="Facebook" style="width:36px;height:36px;border-radius:10px;background:rgba(24,119,242,0.1);border:1px solid rgba(24,119,242,0.25);display:flex;align-items:center;justify-content:center;color:#4267B2;font-size:0.95rem;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='rgba(24,119,242,0.25)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(24,119,242,0.1)';this.style.transform='translateY(0)'"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/dcsc_official/" target="_blank" title="Instagram" style="width:36px;height:36px;border-radius:10px;background:rgba(225,48,108,0.1);border:1px solid rgba(225,48,108,0.25);display:flex;align-items:center;justify-content:center;color:#e1306c;font-size:0.95rem;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='rgba(225,48,108,0.25)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(225,48,108,0.1)';this.style.transform='translateY(0)'"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:official.dcsc@gmail.com" title="Email" style="width:36px;height:36px;border-radius:10px;background:rgba(234,67,53,0.1);border:1px solid rgba(234,67,53,0.25);display:flex;align-items:center;justify-content:center;color:#ea4335;font-size:0.95rem;text-decoration:none;transition:all 0.2s;" onmouseover="this.style.background='rgba(234,67,53,0.25)';this.style.transform='translateY(-2px)'" onmouseout="this.style.background='rgba(234,67,53,0.1)';this.style.transform='translateY(0)'"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="achievements.html">Achievements</a></li>
+                    <li><a href="committee.html">Committee</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="scilab.html">Sci-Lab</a></li>
+                    <li><a href="join.html">Join Club</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Official Contact</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot" style="color:var(--cyan-glow);flex-shrink:0;"></i> Dhaka College, Dhaka-1205, Bangladesh</li>
+                    <li><a href="mailto:official.dcsc@gmail.com" style="color:var(--text-secondary);text-decoration:none;display:flex;align-items:center;gap:10px;"><i class="fa-solid fa-envelope" style="color:var(--cyan-glow);flex-shrink:0;"></i> official.dcsc@gmail.com</a></li>
+                    <li><a href="https://www.facebook.com/dcsc.dc/" target="_blank" style="color:var(--text-secondary);text-decoration:none;display:flex;align-items:center;gap:10px;"><i class="fa-brands fa-facebook" style="color:#4267B2;flex-shrink:0;"></i> facebook.com/dcsc.dc</a></li>
+                    <li><a href="https://www.instagram.com/dcsc_official/" target="_blank" style="color:var(--text-secondary);text-decoration:none;display:flex;align-items:center;gap:10px;"><i class="fa-brands fa-instagram" style="color:#e1306c;flex-shrink:0;"></i> @dcsc_official</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Dhaka College Science Club (DCSC). All Rights Reserved.</p>
+            <p>&copy; 2026 Dhaka College Science Club &mdash; Est. 1996. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <script src="app.js?v=9"></script>
+    <script src="app.js?v=10"></script>
 </body>
 </html>

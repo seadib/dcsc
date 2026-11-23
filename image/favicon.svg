@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080C14" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFA500" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Shield/Rounded Square -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" stroke="url(#cyanGrad)" stroke-width="12" />
+
+  <!-- Atom Orbits -->
+  <ellipse cx="256" cy="256" rx="180" ry="65" fill="none" stroke="url(#cyanGrad)" stroke-width="14" transform="rotate(-30 256 256)" opacity="0.9" />
+  <ellipse cx="256" cy="256" rx="180" ry="65" fill="none" stroke="url(#cyanGrad)" stroke-width="14" transform="rotate(30 256 256)" opacity="0.9" />
+  <ellipse cx="256" cy="256" rx="180" ry="65" fill="none" stroke="url(#goldGrad)" stroke-width="14" transform="rotate(90 256 256)" opacity="0.85" />
+
+  <!-- Nucleus / Center Glow -->
+  <circle cx="256" cy="256" r="38" fill="url(#goldGrad)" />
+  <circle cx="256" cy="256" r="48" fill="none" stroke="#FFFFFF" stroke-width="6" opacity="0.8" />
+
+  <!-- Electrons -->
+  <circle cx="110" cy="170" r="14" fill="url(#goldGrad)" />
+  <circle cx="402" cy="170" r="14" fill="url(#goldGrad)" />
+  <circle cx="256" cy="436" r="14" fill="url(#cyanGrad)" />
+</svg>

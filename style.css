@@ -2,8 +2,8 @@
    DHAKA COLLEGE SCIENCE CLUB (DCSC) - GOOD TIMES & OUTFIT TYPOGRAPHY
    ========================================================================== */
 
-/* Import Google Fonts: Outfit, Space Grotesk, Orbitron, Plus Jakarta Sans, Hind Siliguri */
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Orbitron:wght@700;800;900&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@700;800;900&display=swap');
+/* Import Google Fonts: Outfit, Space Grotesk, Orbitron, Plus Jakarta Sans */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@700;800;900&display=swap');
 
 :root {
     /* Obsidian Dark Theme */
@@ -28,8 +28,8 @@
     --font-heading: 'Orbitron', sans-serif;
     --font-nav: 'Orbitron', sans-serif;
 
-    --font-body: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
-    --font-bangla: 'Hind Siliguri', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+    /* Bangla font removed — English only */
     
     /* Effects */
     --glass-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5);
@@ -233,32 +233,7 @@
     color: #0284C7 !important;
 }
 
-/* Footer */
-[data-theme="light"] .footer {
-    background: #1E293B !important;
-}
-[data-theme="light"] .footer .brand-line1 {
-    color: #fff !important;
-}
-[data-theme="light"] .footer .brand-line2 {
-    color: #38BDF8 !important;
-}
-[data-theme="light"] .footer-col h4 {
-    color: #fff !important;
-}
-[data-theme="light"] .footer-col p,
-[data-theme="light"] .footer-col li,
-[data-theme="light"] .footer-col a,
-[data-theme="light"] .contact-info li {
-    color: #94A3B8 !important;
-}
-[data-theme="light"] .footer-col ul li a:hover {
-    color: #38BDF8 !important;
-}
-[data-theme="light"] .footer-bottom {
-    color: #64748B !important;
-    border-top-color: rgba(255, 255, 255, 0.1) !important;
-}
+/* Footer — see light mode footer section below */
 
 /* Form Controls */
 [data-theme="light"] .form-control {
@@ -379,11 +354,12 @@
 [data-theme="light"] .footer::before {
     background: linear-gradient(90deg, transparent, #0284C7, #B45309, #0284C7, transparent) !important;
 }
-[data-theme="light"] .footer .brand-line1 {
+[data-theme="light"] .footer .footer-logo span[style*="color:#FFFFFF"],
+[data-theme="light"] .footer .footer-logo span[style*="color: #FFFFFF"] {
     color: #0F172A !important;
 }
-[data-theme="light"] .footer .brand-line2 {
-    color: #0284C7 !important;
+[data-theme="light"] .footer .footer-logo div[style*="background:rgba(255,255,255,0.2)"] {
+    background: rgba(0,0,0,0.15) !important;
 }
 [data-theme="light"] .footer-col h4 {
     color: #0F172A !important;
@@ -418,6 +394,12 @@
 [data-theme="light"] h2[style*="color:#fff"],
 [data-theme="light"] h3[style*="color:#fff"] {
     color: #0F172A !important;
+}
+/* Keep white text on dark gradient overlays (team card captions, image captions) */
+[data-theme="light"] .team-card [style*="background:linear-gradient"] [style*="color:#fff"],
+[data-theme="light"] .team-card [style*="background:linear-gradient"] p[style*="color:#fff"],
+[data-theme="light"] .team-card [style*="background:linear-gradient"] h3 {
+    color: #fff !important;
 }
 
 /* ===== LIGHT MODE — PURE CLEAN WHITE, NO PARTICLE ANIMATION ===== */
@@ -830,17 +812,17 @@ h1, h2, h3, .page-title, .section-title {
 .full-width { width: 100%; justify-content: center; }
 
 /* FOOTER LOGO FIX & GOOD TIMES TYPOGRAPHY */
-.footer { background: #05080E; border-top: 1px solid var(--border-color); padding: 60px 24px 20px; }
+.footer { background: #05080E; border-top: 1px solid var(--border-color); padding: 60px 24px 20px; position: relative; }
 .footer-container { max-width: 1250px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
-.footer-logo { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
-.footer-logo img { width: 46px; height: 52px; object-fit: contain; flex-shrink: 0; display: block; }
-.footer-col h4 { font-family: var(--font-heading); font-size: 1.1rem; color: var(--text-primary); margin-bottom: 16px; }
+.footer-logo { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.footer-logo img { width: 44px; height: 50px; object-fit: contain; flex-shrink: 0; display: block; }
+.footer-col h4 { font-family: 'Space Grotesk', sans-serif; font-size: 0.78rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--cyan-glow); margin-bottom: 18px; font-weight: 800; }
 .footer-col ul { list-style: none; }
 .footer-col ul li { margin-bottom: 10px; }
-.footer-col ul li a { color: var(--text-secondary); text-decoration: none; font-family: 'Space Grotesk', sans-serif; transition: var(--transition); }
+.footer-col ul li a { color: var(--text-secondary); text-decoration: none; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.9rem; transition: var(--transition); }
 .footer-col ul li a:hover { color: var(--cyan-glow); }
-.contact-info li { color: var(--text-secondary); display: flex; align-items: center; gap: 10px; font-size: 0.9rem; }
-.footer-bottom { text-align: center; color: var(--text-muted); font-size: 0.85rem; border-top: 1px solid var(--border-color); padding-top: 20px; }
+.contact-info li { color: var(--text-secondary); display: flex; align-items: center; gap: 10px; font-size: 0.88rem; font-family: 'Plus Jakarta Sans', sans-serif; }
+.footer-bottom { text-align: center; color: var(--text-muted); font-size: 0.82rem; border-top: 1px solid var(--border-color); padding-top: 20px; font-family: 'Space Grotesk', sans-serif; letter-spacing: 0.5px; }
 
 /* ANIMATION OBSERVER CLASS */
 .animate-on-scroll { opacity: 0; transform: translateY(25px); transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -862,10 +844,10 @@ h1, h2, h3, .page-title, .section-title {
     .footer-container { grid-template-columns: 1fr !important; gap: 24px !important; }
     .form-row { flex-direction: column; }
 
-    /* Brand — DCSC only on mobile */
-    .brand-text .brand-line1 { display: none; }
-    .brand-text .brand-line2 { display: none; }
-    .brand-mobile { display: block !important; }
+    /* Brand — DCSC only on small mobile */
+    .brand-text .brand-line1 { display: block; }
+    .brand-text .brand-line2 { display: block; }
+    .brand-mobile { display: none !important; }
 
     /* Nav drawer */
     .nav-menu {
@@ -998,6 +980,11 @@ h1, h2, h3, .page-title, .section-title {
     .page-title { font-size: 1.4rem !important; }
     .nav-container { padding: 12px 16px; }
     .logo-shield { width: 36px; height: 40px; }
+
+    /* Brand — DCSC abbreviation on very small screens */
+    .brand-text .brand-line1 { display: none; }
+    .brand-text .brand-line2 { display: none; }
+    .brand-mobile { display: block !important; }
     .recap-slider > div { flex: 0 0 92vw !important; height: 220px !important; }
 }
 
@@ -1057,3 +1044,44 @@ h1, h2, h3, .page-title, .section-title {
     }
 }
 
+/* ===== GALLERY EVENT DETAIL PAGES ===== */
+/* Mobile responsive for gallery event detail pages - handled inline */
+
+/* ===== LIGHT MODE — GALLERY PAGES ===== */
+[data-theme="light"] .gallery-event-header h2 {
+    color: #0F172A !important;
+}
+[data-theme="light"] .gallery-preview-item,
+[data-theme="light"] .general-gallery-item,
+[data-theme="light"] .gallery-photo-item {
+    border-color: rgba(0,0,0,0.08) !important;
+}
+[data-theme="light"] .gallery-preview-item:hover,
+[data-theme="light"] .general-gallery-item:hover,
+[data-theme="light"] .gallery-photo-item:hover {
+    border-color: #0284C7 !important;
+    box-shadow: 0 4px 16px rgba(2,132,199,0.1) !important;
+}
+[data-theme="light"] .gallery-event-header .view-all-btn {
+    border-color: rgba(2,132,199,0.25) !important;
+    color: #0284C7 !important;
+}
+[data-theme="light"] .gallery-event-header .view-all-btn:hover {
+    background: rgba(2,132,199,0.06) !important;
+}
+[data-theme="light"] .back-link {
+    border-color: rgba(0,0,0,0.12) !important;
+    color: #334155 !important;
+}
+[data-theme="light"] .back-link:hover {
+    border-color: #0284C7 !important;
+    color: #0284C7 !important;
+}
+[data-theme="light"] .photo-count-badge {
+    background: rgba(2,132,199,0.06) !important;
+    border-color: rgba(2,132,199,0.2) !important;
+    color: #0284C7 !important;
+}
+[data-theme="light"] .gallery-detail-desc p {
+    color: #475569 !important;
+}

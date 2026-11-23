@@ -605,34 +605,4 @@ function triggerConfetti() {
     }
 }
 
-// --- LANGUAGE TOGGLE & TRANSLATION SYSTEM ---
-document.addEventListener('DOMContentLoaded', () => {
-    const langBtn = document.getElementById('lang-btn');
-    const langIndicator = document.getElementById('lang-indicator');
-    
-    if (langBtn) {
-        let currentLang = localStorage.getItem('dcsc-lang') || 'en';
-        
-        const setLanguage = (lang) => {
-            document.documentElement.setAttribute('data-lang', lang);
-            if (langIndicator) {
-                langIndicator.textContent = lang.toUpperCase();
-            }
-            document.querySelectorAll('[data-en][data-bn]').forEach(el => {
-                const text = el.getAttribute(`data-${lang}`);
-                if (text) {
-                    el.textContent = text;
-                }
-            });
-            localStorage.setItem('dcsc-lang', lang);
-        };
-
-        // Initialize language
-        setLanguage(currentLang);
-
-        langBtn.addEventListener('click', () => {
-            currentLang = currentLang === 'en' ? 'bn' : 'en';
-            setLanguage(currentLang);
-        });
-    }
-});
+// Language toggle system removed — site is English-only
