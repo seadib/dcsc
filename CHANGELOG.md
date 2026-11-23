@@ -1,5 +1,10 @@
 
 
+## [v2.1.6] - 2026-11-23
+### Clarify Club Contributor Permissions & Admin Contact
+Updated LICENSE and README to ensure club members have full internal collaboration access while protecting against unauthorized external copying, with admin contact drseadib@gmail.com.
+
+
 ## [v2.1.5] - 2026-11-23
 ### Add Formal Proprietary License File
 Added official root LICENSE file declaring All Rights Reserved proprietary terms for Dhaka College Science Club web platform.

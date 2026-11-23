@@ -1,19 +1,27 @@
-<div align="center">
+<p align="center">
+  <a href="https://seadib.github.io/dcsc">
+    <img src="image/logo.png" alt="Dhaka College Science Club Logo" width="130" height="130">
+  </a>
+</p>
 
-<img src="image/logo.png" alt="DCSC Logo" width="140">
+<h1 align="center">Dhaka College Science Club (DCSC)</h1>
 
-# 🔬 Dhaka College Science Club (DCSC)
+<p align="center">
+  <em>Spreading the knowledge of science to the utmost since 1996</em>
+</p>
 
-### *Spreading the knowledge of science to the utmost since 1996*
+<p align="center">
+  <a href="https://seadib.github.io/dcsc"><img src="https://img.shields.io/badge/Website-Live_Online-00F2FE?style=flat-square&logo=google-chrome&logoColor=white" alt="Live Website"></a>
+  <a href="https://dcsc.sanity.studio"><img src="https://img.shields.io/badge/Admin_Studio-CMS_Live-F03E2F?style=flat-square&logo=sanity&logoColor=white" alt="Admin Studio"></a>
+  <a href="https://github.com/seadib/dcsc"><img src="https://img.shields.io/badge/Repository-GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Repository"></a>
+  <a href="#-terms-of-use--copyright"><img src="https://img.shields.io/badge/License-Proprietary-red?style=flat-square" alt="Proprietary License"></a>
+  <img src="https://img.shields.io/badge/Framework-Next.js_16-000000?style=flat-square&logo=next.js&logoColor=white" alt="Next.js 16">
+  <img src="https://img.shields.io/badge/Styling-Tailwind_CSS-38BDF8?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+</p>
 
-[![Website](https://img.shields.io/badge/🌐_Website-Live-00F2FE?style=for-the-badge)](https://seadib.github.io/dcsc)
-[![Admin Studio](https://img.shields.io/badge/🛠️_Admin_Studio-Live-F03E2F?style=for-the-badge&logo=sanity&logoColor=white)](https://dcsc.sanity.studio)
-[![Repository](https://img.shields.io/badge/💻_Repository-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seadib/dcsc)
-[![License: Proprietary](https://img.shields.io/badge/🔒_License-Proprietary-red?style=for-the-badge)](#-copyright--proprietary-notice)
-
-**#ForClubAndCountry** 🇧🇩
-
-</div>
+<p align="center">
+  <strong>#ForClubAndCountry</strong> 🇧🇩
+</p>
 
 ---
 
@@ -26,135 +34,162 @@
 
 ## 📖 About DCSC
 
-**Dhaka College Science Club (DCSC)** is one of the oldest and most prestigious collegiate science organizations in Bangladesh, established in **1996**. Over three decades of excellence, DCSC has nurtured generations of scientists, researchers, Olympiad champions, and innovators.
+**Dhaka College Science Club (DCSC)** is one of the premier collegiate science organizations in Bangladesh, established in **1996**. Over nearly three decades of heritage, DCSC has inspired thousands of students, fostering scientific curiosity, competitive Olympiad excellence, research ethics, and technological innovation.
 
-This repository powers the entire official digital ecosystem of DCSC — integrating a **Next.js 16 App Router** frontend, a cloud-deployed **Sanity Studio v3** zero-code Content Management System, and the legacy interactive static web assets.
-
----
-
-## 🚀 Modern Architecture & Key Capabilities
-
-<div align="center">
-
-| Module | Framework / Platform | Status & Live Access |
-| :--- | :--- | :--- |
-| **Public Frontend** | Next.js 16, React 19, Tailwind CSS v4, TypeScript | 🌐 [seadib.github.io/dcsc](https://seadib.github.io/dcsc) |
-| **Admin Dashboard** | Sanity Studio v3 (Fluid Cloud Hosting) | 🛠️ [dcsc.sanity.studio](https://dcsc.sanity.studio) |
-| **Interactive Sci-Lab** | HTML5 Physics & Chemistry Simulation Canvases | 🔬 [Interactive Hub](https://seadib.github.io/dcsc/scilab.html) |
-| **Source Repository** | GitHub Releases, Semantic Tags, Asset Tracking | 💻 [seadib/dcsc](https://github.com/seadib/dcsc) |
-
-</div>
-
-### ✨ Highlights
-
-- 🎨 **Dynamic Drag-and-Drop Page Builder**: Reorder, toggle, and curate homepage hero banners, stats counters, events, posts, committee highlights, and CTA blocks directly from Sanity Studio.
-- 👥 **Executive Committee & Historical Archives**: Full interactive view for current batch (2025-26) with biography modal popups, plus archived collapsible views with carousel sliders for past batches.
-- 🎓 **Honorable Moderators & Mentors Panel**: Administrative control to manage teacher profiles with pause/resume visibility switches.
-- 🏆 **National Olympiad & Accolades Showcase**: Dedicated showcase for awards won at national Math, Physics, Earth Olympiads, and Science Fests.
-- 🖼️ **Curated Photo Gallery & Albums**: Multi-image albums (Olympiad Hunt 4.0, Grand Iftar, Intra Fest) with automated Alt-text generation and Sanity CDN image optimization.
-- 📰 **Digital Wall Magazine & Wednesday Wonders**: High-resolution archive of 25+ scientific infographic issues and research articles.
-- ⚡ **Automated Dynamic SEO & OpenGraph**: Instant metadata and social card generation across all routes.
-- 🌙 **Modern Dark Aesthetic**: Deep obsidian palette (`#080C14`), vibrant cyan accents (`#00F2FE`), and responsive typography (Orbitron, Space Grotesk, Plus Jakarta Sans).
+This official monorepo powers DCSC's next-generation digital ecosystem — combining a **Next.js 16 App Router** frontend, a cloud-hosted **Sanity Studio v3** zero-code Content Management System, and an interactive virtual **Sci-Lab** suite.
 
 ---
 
-## 📁 Repository Structure
+## 🚀 System Architecture
+
+```text
+                                  ┌───────────────────────────────┐
+                                  │      Official Domain          │
+                                  │   seadib.github.io/dcsc       │
+                                  └──────────────┬────────────────┘
+                                                 │
+                   ┌─────────────────────────────┴─────────────────────────────┐
+                   ▼                                                           ▼
+    ┌─────────────────────────────┐                             ┌─────────────────────────────┐
+    │     Modern Web Client       │                             │     Sanity Studio v3 CMS    │
+    │  • Next.js 16 (App Router)  │◄────── Realtime GROQ API ───┤  • Cloud: dcsc.sanity.studio│
+    │  • Tailwind CSS v4          │                             │  • Zero-Code Administration │
+    │  • React Server Components  │                             │  • Live Visual Page Builder │
+    │  • Automated SEO & OpenGraph│                             │  • High-Res CDN Asset Engine│
+    └──────────────┬──────────────┘                             └─────────────────────────────┘
+                   │
+                   ▼
+    ┌─────────────────────────────┐
+    │    Interactive Sci-Lab      │
+    │  • Chemistry Reactions      │
+    │  • Orbital Gravity Physics  │
+    │  • Atom Builder & Quizzes   │
+    └─────────────────────────────┘
+```
+
+---
+
+## ✨ Key Platform Features
+
+| Feature | Description | Status |
+| :--- | :--- | :---: |
+| 🎨 **Dynamic Page Builder** | Reorder, curate, and toggle hero banners, statistics, events, posts, and CTA sections directly from Sanity Studio without touching code. | ✅ Live |
+| 👥 **Committee Management** | Comprehensive batch directory featuring member bios, portraits, designations, and social handles, with collapsible past batch archives. | ✅ Live |
+| 🎓 **Faculty & Mentors Panel** | Profiles of honorable teacher moderators with one-click administrative pause/resume visibility controls. | ✅ Live |
+| 🏆 **Olympiad Trophies Showcase** | Dedicated showcase celebrating national/international Math, Physics, and Earth Olympiad champions and project awards. | ✅ Live |
+| 🖼️ **Curated Photo Gallery** | Multi-album photo collections (Olympiad Hunt, Annual Grand Iftar, Science Festivals) with automated Alt-text and CDN acceleration. | ✅ Live |
+| 📰 **Digital Wall Magazine** | Digital archive containing 25+ volumes of "Wednesday Wonders" infographics, research articles, and student publications. | ✅ Live |
+| 🔬 **Virtual Sci-Lab Hub** | Browser-based interactive simulation canvases for mixing chemical reagents, orbital mechanics, atomic structure, and timed quizzes. | ✅ Live |
+| 🔍 **Automated Dynamic SEO** | Server-side metadata, OpenGraph social sharing banners, dynamic sitemap, and robots.txt generation. | ✅ Live |
+
+---
+
+## 📁 Monorepo Structure
 
 ```text
 dcsc/
-├── .agents/skills/             # 🤖 Workspace Automation Skills
-│   └── git-release-manager/    # Automated semantic tagging & GitHub Releases
-├── image/                      # 🖼️ High-resolution club media assets & logos
+├── .agents/skills/             # 🤖 Workspace automation skills
+│   └── git-release-manager/    # Automated semantic versioning and release publisher
+├── image/                      # 🖼️ High-resolution club media assets and logos
 ├── studio/                     # 🛠️ Standalone Sanity Studio v3 CMS
-│   ├── schemaTypes/            # Content schemas (singletons, documents, pageBuilder)
+│   ├── schemaTypes/            # Document and singleton schemas
+│   │   ├── documents/          # batch, committeeMember, event, post, achievement, etc.
+│   │   ├── objects/            # PageBuilder blocks, SEO object definitions
+│   │   └── singletons/         # homePage, siteSettings
 │   ├── sanity.config.ts        # Studio workspace configuration
-│   └── sanity.cli.ts           # Sanity CLI & cloud hosting config
+│   └── sanity.cli.ts           # Sanity CLI & cloud hosting configuration
 ├── web/                        # ⚡ Modern Next.js 16 App Router Frontend
+│   ├── public/                 # Static public assets
 │   ├── src/
-│   │   ├── app/                # Route segments (/events, /committee, /gallery, etc.)
-│   │   ├── components/         # Page builder, navbar, modals, cards
-│   │   └── lib/                # Sanity client, image URL builder, SEO helpers
-├── index.html                  # 🏛️ Original legacy static web experience
-├── achievements.html           # Static accolades mirror
-├── committee.html              # Static committee mirror
-├── events.html                 # Static events mirror
-├── gallery.html                # Static gallery mirror
-├── scilab.html                 # 🔬 Interactive virtual science labs
-├── wall-magazine.html          # 📰 Wall magazine infographics
+│   │   ├── app/                # Next.js App Router (/events, /committee, /gallery, etc.)
+│   │   ├── components/         # Page builder, navigation, modals, member cards
+│   │   └── lib/                # Sanity client, image URL builder, SEO utilities
+├── achievements.html           # 🏛️ Legacy static accolades page
+├── committee.html              # Legacy static committee page
+├── events.html                 # Legacy static events page
+├── gallery.html                # Legacy static gallery page
+├── index.html                  # Legacy static landing page
+├── scilab.html                 # 🔬 Interactive virtual science lab hub
+├── wall-magazine.html          # Legacy wall magazine collection
 ├── AGENTS.md                   # 📜 Agent development & release policies
-├── CHANGELOG.md                # 📝 Version-by-version release history
-├── LICENSE                     # 🔒 Official proprietary license terms
-└── README.md                   # 📖 Project documentation
+├── CHANGELOG.md                # 📝 Version-by-version release changelog
+├── LICENSE                     # 🔒 Terms of use and ownership notice
+└── README.md                   # 📖 Complete platform documentation
 ```
 
 ---
 
-## 🛠️ Local Development
+## 🛠️ Local Development Setup
 
-### 1. Web Frontend (Next.js)
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v20+ recommended)
+- [Git](https://git-scm.com/)
+
+### 1. Web Application (Next.js 16)
 ```bash
+# Navigate to web directory
 cd web
+
+# Install dependencies
 npm install
+
+# Run the development server
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) to view the Next.js application.
+Open [http://localhost:3000](http://localhost:3000) to view the client application.
 
-### 2. Admin CMS (Sanity Studio)
+### 2. Admin CMS (Sanity Studio v3)
 ```bash
+# Navigate to studio directory
 cd studio
+
+# Install dependencies
 npm install
+
+# Run the studio locally
 npm run dev
 ```
-Open [http://localhost:3333](http://localhost:3333) for local development, or use the cloud version directly at [https://dcsc.sanity.studio](https://dcsc.sanity.studio).
+Open [http://localhost:3333](http://localhost:3333) to access local Sanity Studio, or use the cloud dashboard at [https://dcsc.sanity.studio](https://dcsc.sanity.studio).
 
 ---
 
-## 🏷️ Release Versioning
-
-| Tag | Date | Milestone Description |
-| :--- | :--- | :--- |
-| **`v2.1.5`** | 2026-11-23 | Formal Proprietary LICENSE file & full copyright enforcement |
-| **`v2.1.2`** | 2026-11-23 | Standardized Live Links specification across all documentation |
-| **`v2.1.0`** | 2026-11-23 | Complete content & asset synchronization (Trophies, Wall Magazines, Albums) |
-| **`v2.0.1`** | 2026-11-23 | Cloud deployment of Sanity Studio at `dcsc.sanity.studio` |
-| **`v2.0.0`** | 2026-11-23 | Next.js 16 App Router & Sanity Studio v3 monorepo architecture |
-| **`v1.0.0`** | 2026-11-08 | Original legacy static website (HTML5, CSS3, Vanilla JS, Sci-Lab) |
-
----
-
-## 🔒 Copyright & Terms of Use
+## 🔒 Terms of Use & Copyright
 
 © 2026 Abdullah Al Adib (seadib) & Dhaka College Science Club (DCSC). All rights reserved.
 
 This platform, codebase, and design architecture are developed and administered by Abdullah Al Adib for official Dhaka College Science Club (DCSC) activities. Club members, executives, and authorized contributors are fully welcome to use and collaborate on this project for club operations. External unauthorized parties unaffiliated with DCSC may not copy, clone, or redistribute this work without prior permission.
 
-For permissions or inquiries, contact:
-- ✉️ Email: `drseadib@gmail.com`
-- 🌐 Website: [seadib.github.io/dcsc](https://seadib.github.io/dcsc)
-- 🔒 Full Legal Terms: [LICENSE](LICENSE)
-
-
+For permissions, collaborations, or inquiries:
+- ✉️ **Admin Contact**: `drseadib@gmail.com`
+- 🌐 **Official Website**: [seadib.github.io/dcsc](https://seadib.github.io/dcsc)
+- 🔒 **Full Terms**: [LICENSE](LICENSE)
 
 ---
 
 ## 👨‍💻 Engineering & Credits
 
-<div align="center">
+<p align="center">
+  <strong>Platform designed, engineered, and maintained by</strong>
+</p>
 
-**Platform designed, engineered, and maintained by**
+<h3 align="center">
+  <a href="https://adi.pro.bd/">Abdullah Al Adib</a>
+</h3>
+<p align="center">
+  <em>Lead Developer &amp; Technical Contributor • Dhaka College Science Club</em>
+</p>
 
-### [Abdullah Al Adib](https://adi.pro.bd/)
-*Lead Developer & Technical Contributor • Dhaka College Science Club*
-
-[![GitHub](https://img.shields.io/badge/GitHub-seadib-181717?style=flat&logo=github)](https://github.com/seadib)
-[![Portfolio](https://img.shields.io/badge/Portfolio-adi.pro.bd-blue?style=flat)](https://adi.pro.bd/)
+<p align="center">
+  <a href="https://github.com/seadib"><img src="https://img.shields.io/badge/GitHub-seadib-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Profile"></a>
+  <a href="https://adi.pro.bd/"><img src="https://img.shields.io/badge/Portfolio-adi.pro.bd-00F2FE?style=flat-square" alt="Portfolio"></a>
+  <a href="mailto:drseadib@gmail.com"><img src="https://img.shields.io/badge/Email-drseadib@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
 <br>
 
-**Dhaka College Science Club (DCSC)**  
-*Est. 1996 • Mirpur Road, Dhanmondi, Dhaka-1205, Bangladesh*  
-*Spreading the knowledge of science to the utmost*
-
-**#ForClubAndCountry** 🇧🇩
-
-</div>
+<p align="center">
+  <strong>Dhaka College Science Club (DCSC)</strong><br>
+  <em>Est. 1996 • Mirpur Road, Dhanmondi, Dhaka-1205, Bangladesh</em><br>
+  <em>Spreading the knowledge of science to the utmost</em><br><br>
+  <strong>#ForClubAndCountry</strong> 🇧🇩
+</p>
