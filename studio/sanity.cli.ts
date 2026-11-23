@@ -5,5 +5,7 @@ export default defineCliConfig({
     projectId: 't5npxsw7',
     dataset: 'production',
   },
+  studioHost: 'dcsc',
   autoUpdates: false,
 })
+
