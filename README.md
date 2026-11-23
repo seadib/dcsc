@@ -1,176 +1,104 @@
-<div align="center">
+# 🔬 Dhaka College Science Club (DCSC) Official Web Platform
 
-<img src="image/logo.png" alt="DCSC Logo" width="120">
+[![Next.js](https://img.shields.io/badge/Next.js-16_App_Router-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev/)
+[![Sanity Studio](https://img.shields.io/badge/Sanity-Studio_v3-F03E2F?style=flat&logo=sanity)](https://www.sanity.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-# 🔬 Dhaka College Science Club (DCSC)
-
-### *Spreading the knowledge of science to the utmost since 1996*
-
-[![Website](https://img.shields.io/badge/🌐_Website-Live-00F2FE?style=for-the-badge)](https://dhakacollegescienceclub.github.io/)
-[![Facebook](https://img.shields.io/badge/Facebook-DCSC-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/DhakaCollegeScienceClub)
-[![Instagram](https://img.shields.io/badge/Instagram-DCSC-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/dcsc_official)
-
-**#ForClubAndCountry**
-
-</div>
+The official web platform and zero-code content management architecture for **Dhaka College Science Club (DCSC)** — established in 1996, one of the oldest and most prestigious collegiate science clubs in Bangladesh.
 
 ---
 
-## 📖 About
+## 🌐 Live Deployments & Dashboards
 
-**Dhaka College Science Club (DCSC)** is one of the most prestigious science clubs in Bangladesh, established in **1996**. Our mission is to ignite scientific curiosity, foster innovation, and build a community of passionate science enthusiasts among the students of Dhaka College.
-
-This repository contains the **official website** of DCSC — a modern, responsive, and visually stunning static website built with vanilla HTML, CSS, and JavaScript.
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---|---|
-| 🌙☀️ **Dark / Light Mode** | Full theme toggle with separate optimized designs for each mode |
-| 📱 **Fully Responsive** | Works flawlessly on mobile, tablet, and desktop |
-| 🏠 **Home Page** | Hero section, posts, 2025 recap slider, Intra Fest gallery, achievements preview |
-| 📅 **Events** | Detailed event pages — Neuroverse, Freshers', Quizzing, and more |
-| 🏆 **Achievements** | Showcase of club achievements and accolades |
-| 👥 **Committee** | Executive committee members, moderators, and advisors |
-| 🖼️ **Gallery** | Photo gallery from events and festivals |
-| 📝 **Posts** | Club news, updates, and announcements |
-| 🔬 **Sci-Lab** | Interactive science games — Chemistry reactions, Gravity simulator, Atom builder, Quiz |
-| 🪪 **Join & ID Card** | Member registration form with live ID card preview & download (PNG/PDF) |
-| 📜 **Certificate Generator** | Generate participation/achievement certificates with download (PNG/PDF) |
-| 🗺️ **Google Maps** | Embedded location of DCSC |
-| 🎵 **Background Music** | Optional ambient music toggle |
-| 🧪 **Particle Animation** | Interactive canvas background in dark mode |
+| Service | Description | Live URL |
+| :--- | :--- | :--- |
+| **Admin Dashboard (Sanity Studio)** | Zero-code cloud CMS for managing all website content | [https://dcsc.sanity.studio](https://dcsc.sanity.studio) |
+| **GitHub Repository** | Source code, version history, and release tags | [https://github.com/seadib/dcsc](https://github.com/seadib/dcsc) |
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Key Features
 
-| Technology | Usage |
-|---|---|
-| **HTML5** | Page structure and semantic markup |
-| **CSS3** | Custom styling, animations, glassmorphism, responsive design |
-| **JavaScript** | Theme toggle, sliders, interactive games, form handling |
-| **Google Fonts** | Orbitron, Space Grotesk, Plus Jakarta Sans, Hind Siliguri |
-| **Font Awesome 6** | Icons throughout the site |
-| **html2canvas** | ID card & certificate screenshot/download |
-| **jsPDF** | PDF generation for ID cards & certificates |
+### 🛠️ 1. Zero-Code Sanity Studio Admin Panel
+- **Page Builder**: Reorder, add, or toggle homepage sections via drag-and-drop.
+- **Executive Committee**: Manage current and past executive batches, member designations, avatars, social links, and biography popups.
+- **Honorable Moderators & Mentors**: Manage teacher profiles with administrative pause/resume visibility switches.
+- **Events & Science Fests**: Publish upcoming and past festivals with direct Facebook event integration.
+- **Wednesday Wonders & News**: Publish science digests, announcements, and articles.
+- **Club Achievements**: Record national Olympiad titles, science expo trophies, and project awards.
+- **Photo Gallery & Albums**: Multi-photo albums with automated alt tags and CDN image optimization.
+- **Digital Wall Magazine**: Interactive archives of publications and infographics.
+
+### ⚡ 2. Next.js 16 High-Performance Frontend
+- **App Router & Server-Side Rendering (SSR)** for near-instant page loads.
+- **Incremental Static Regeneration (ISR)** for high-speed delivery with real-time freshness.
+- **Tailwind CSS v4 & Lucide Icons** delivering an ultra-modern dark-themed aesthetic.
+- **Interactive Sci-Lab Hub** featuring chemistry, gravity, atom simulations, and Olympiad quizzes.
+- **Automated Dynamic SEO & OpenGraph** generator for social media previews.
 
 ---
 
-## 📁 Project Structure
+## 📁 Repository Structure
 
-```
-DCSC/
-├── index.html              # 🏠 Home page
-├── about.html              # ℹ️ About DCSC
-├── events.html             # 📅 Events listing
-│   ├── event-freshers.html # Freshers' Orientation
-│   ├── event-neuroverse.html # Neuroverse event
-│   ├── event-quizzing.html # Quizzing event
-│   └── event-us.html       # US event
-├── achievements.html       # 🏆 Achievements
-├── committee.html          # 👥 Executive Committee
-├── gallery.html            # 🖼️ Photo Gallery
-├── posts.html              # 📝 News & Updates
-├── join.html               # 🪪 Join + ID Card + Certificate
-├── wall-magazine.html      # 📰 Wall Magazine
-├── scilab.html             # 🔬 Sci-Lab Hub
-│   ├── scilab-chem.html    # Chemistry Lab
-│   ├── scilab-atom.html    # Atom Builder
-│   ├── scilab-gravity.html # Gravity Simulator
-│   ├── scilab-quiz.html    # Science Quiz
-│   └── scilab-sandbox.html # Sandbox
-├── cert-verify.html        # ✅ Certificate Verification
-├── certificates.html       # 📜 Certificate Database
-├── style.css               # 🎨 Main stylesheet
-├── app.js                  # ⚙️ Main JavaScript
-├── image/                  # 🖼️ Image assets
-├── music/                  # 🎵 Audio files
-└── assets/                 # 📦 Additional assets
+```text
+dcsc/
+├── studio/                     # Standalone Sanity Studio v3 CMS
+│   ├── schemaTypes/            # Content models & schemas
+│   │   ├── documents/          # batch, committeeMember, event, post, achievement, etc.
+│   │   ├── objects/            # seo, pageBuilder blocks
+│   │   └── singletons/         # homePage, siteSettings
+│   ├── sanity.config.ts        # Studio workspace configuration
+│   └── sanity.cli.ts           # Studio deployment settings (dcsc.sanity.studio)
+│
+├── web/                        # Next.js 16 App Router Frontend
+│   ├── src/
+│   │   ├── app/                # Route segments (/events, /committee, /gallery, etc.)
+│   │   ├── components/         # PageBuilder blocks, Navigation, Modals, Footer
+│   │   └── lib/                # Sanity client, Image URL builder, SEO utilities
+│   └── public/                 # Static assets, fallback logos, audio
+│
+├── CHANGELOG.md                # Standardized version release history
+├── DEVELOPMENT_LOG.md          # Comprehensive issue resolution and engineering log
+└── README.md                   # Project documentation
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Local Development Setup
 
 ### Prerequisites
-- Any modern web browser (Chrome, Firefox, Edge, Safari)
-- No build tools or dependencies required!
+- Node.js 20+ installed
+- npm or pnpm
 
-### Run Locally
+### 1. Run Next.js Frontend
+```bash
+cd web
+npm install
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/DCSC.git
-   ```
-
-2. **Open in browser**
-   ```bash
-   cd DCSC
-   ```
-   Simply open `index.html` in your browser, or use a local server:
-   ```bash
-   # Using Python
-   python -m http.server 8000
-
-   # Using Node.js
-   npx serve .
-   ```
-
-3. **Visit** `http://localhost:8000`
+### 2. Run Sanity Studio Locally
+```bash
+cd studio
+npm install
+npm run dev
+```
+Open [http://localhost:3333](http://localhost:3333) in your browser (or use the cloud version at [dcsc.sanity.studio](https://dcsc.sanity.studio)).
 
 ---
 
-## 🎨 Design Highlights
+## 🏷️ Release Versioning
 
-- **Typography**: Orbitron for headings/brand, Space Grotesk for titles, Plus Jakarta Sans for body text
-- **Color Palette**:
-  - 🌙 Dark Mode: Obsidian dark `#080C14` with cyan neon `#00F2FE` and gold `#FFD700` accents
-  - ☀️ Light Mode: Clean white `#F1F5F9` with sky blue `#0284C7` and amber `#B45309` accents
-- **Effects**: Glassmorphism, backdrop blur, gradient borders, micro-animations, scroll-triggered reveals
-- **Responsive**: Mobile-first approach with optimized layouts for all screen sizes
+- **`v1.0.0`**: Legacy static HTML/CSS/JS website.
+- **`v2.0.0`**: Modern Next.js 16 App Router + Cloud-Deployed Sanity Studio v3 Architecture.
 
-
-
-## 🤝 Contributing
-
-We welcome contributions from DCSC members and the community!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+For complete release details and engineering logs, refer to [CHANGELOG.md](file:///X:/CHANGELOG.md) and [DEVELOPMENT_LOG.md](file:///X:/DEVELOPMENT_LOG.md).
 
 ---
 
 ## 📄 License
-
-This project is maintained by **Dhaka College Science Club (DCSC)**. All rights reserved.
-
----
-
-## 👨‍💻 Credits
-
-<div align="center">
-
-**Website designed & developed by**
-
-### [Abdullah Al Adib](https://adi.pro.bd/)
-
-</div>
-
----
-
-<div align="center">
-
-**Dhaka College Science Club (DCSC)**
-*Est. 1996 • Dhaka, Bangladesh*
-
-*Spreading the knowledge of science to the utmost*
-
-**#ForClubAndCountry** 🇧🇩
-
-</div>
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.

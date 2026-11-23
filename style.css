@@ -1085,3 +1085,67 @@ h1, h2, h3, .page-title, .section-title {
 [data-theme="light"] .gallery-detail-desc p {
     color: #475569 !important;
 }
+
+
+/* ===== LEADER CARDS — CLICK TO REVEAL ===== */
+.leader-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.leader-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 50%, transparent 100%);
+    padding: 40px 16px 18px;
+    text-align: center;
+    z-index: 2;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.leader-card.revealed .leader-overlay {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* Also show on hover for desktop */
+@media (hover: hover) {
+    .leader-card:hover .leader-overlay {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.leader-name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 4px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.9);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.leader-role {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--cyan-glow);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(0,242,254,0.5);
+}
+/* Mobile responsive for leader cards */
+@media (max-width: 768px) {
+    .leader-name { font-size: 0.85rem; }
+    .leader-role { font-size: 0.7rem; }
+    .leader-overlay { padding: 30px 12px 14px; }
+}
+@media (max-width: 480px) {
+    div[style*="repeat(3, 1fr)"][style*="max-width:960px"] {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 12px !important;
+    }
+}
