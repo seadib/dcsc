@@ -10,6 +10,13 @@ from datetime import datetime
 REPO_OWNER = "seadib"
 REPO_NAME = "dcsc"
 
+STANDARDIZED_LIVE_LINKS = """### 🔗 Live Links:
+- 🌐 **Live Website**: https://seadib.github.io/dcsc
+- 🛠️ **Admin Dashboard**: https://dcsc.sanity.studio
+- 💻 **Repository**: https://github.com/seadib/dcsc
+"""
+
+
 def run_cmd(cmd, check=True):
     p = subprocess.run(cmd, shell=True, capture_output=True, text=True)
     if check and p.returncode != 0:
@@ -66,14 +73,17 @@ def publish_github_release(tag, title, notes, token):
         "User-Agent": "DCSC-Release-Automation"
     }
     
+    full_body = f"{STANDARDIZED_LIVE_LINKS.strip()}\n\n---\n\n### 📝 Release Details\n{notes}"
+
     payload = {
         "tag_name": tag,
         "target_commitish": "main",
         "name": f"{tag} — {title}",
-        "body": notes,
+        "body": full_body,
         "draft": False,
         "prerelease": False
     }
+
     
     req = urllib.request.Request(url, data=json.dumps(payload).encode('utf-8'), headers=headers, method="POST")
     try:

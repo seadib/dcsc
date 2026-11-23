@@ -14,4 +14,12 @@ Whenever you commit and push changes to GitHub (`seadib/dcsc`), you **MUST ALWAY
    ```bash
    python .agents/skills/git-release-manager/scripts/publish_release.py [patch|minor|major] "<Release Title>" "<Release Notes>"
    ```
-4. **GitHub Releases Synchronization**: Confirm that the release object is published on `https://github.com/seadib/dcsc/releases` with download assets and comprehensive notes.
+4. **Mandatory Live Links Format**:
+   Ensure every release notes and documentation always contains the standardized live links:
+   ```markdown
+   ### 🔗 Live Links:
+   - 🌐 **Live Website**: https://seadib.github.io/dcsc
+   - 🛠️ **Admin Dashboard**: https://dcsc.sanity.studio
+   - 💻 **Repository**: https://github.com/seadib/dcsc
+   ```
+5. **GitHub Releases Synchronization**: Confirm that the release object is published on `https://github.com/seadib/dcsc/releases` with download assets and comprehensive notes.

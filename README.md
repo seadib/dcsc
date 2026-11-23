@@ -15,8 +15,10 @@ The official web platform and zero-code content management architecture for **Dh
 
 | Service | Description | Live URL |
 | :--- | :--- | :--- |
+| **Live Website** | Official hosted club website on GitHub Pages | [https://seadib.github.io/dcsc](https://seadib.github.io/dcsc) |
 | **Admin Dashboard (Sanity Studio)** | Zero-code cloud CMS for managing all website content | [https://dcsc.sanity.studio](https://dcsc.sanity.studio) |
 | **GitHub Repository** | Source code, version history, and release tags | [https://github.com/seadib/dcsc](https://github.com/seadib/dcsc) |
+
 
 ---
 

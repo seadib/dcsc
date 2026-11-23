@@ -34,6 +34,16 @@ Whenever you need to commit and push changes:
    The script queries `https://api.github.com/repos/seadib/dcsc/releases` using the local Git Credential Manager token to confirm the release is live on:
    `https://github.com/seadib/dcsc/releases`
 
+## Standardized Live Links Format
+Every release note, announcement, and documentation MUST include the standardized live links block:
+
+```markdown
+### 🔗 Live Links:
+- 🌐 **Live Website**: https://seadib.github.io/dcsc
+- 🛠️ **Admin Dashboard**: https://dcsc.sanity.studio
+- 💻 **Repository**: https://github.com/seadib/dcsc
+```
+
 ## Versioning Standards
 - `patch` (`v2.1.0` -> `v2.1.1`): Bug fixes, CSS styling fixes, documentation, small content edits.
 - `minor` (`v2.1.0` -> `v2.2.0`): New feature, new page route, new schema, data migrations, component additions.
