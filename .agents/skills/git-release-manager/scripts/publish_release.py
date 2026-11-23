@@ -36,10 +36,11 @@ def get_github_token():
     return os.environ.get("GITHUB_TOKEN")
 
 def get_latest_tag():
-    tags = run_cmd("git tag -l 'v*.*.*' --sort=-v:refname", check=False).splitlines()
+    tags = [t.strip() for t in run_cmd("git tag -l --sort=-v:refname", check=False).splitlines() if re.match(r"^v?\d+\.\d+\.\d+$", t.strip())]
     if tags:
         return tags[0]
-    return "v2.1.0"
+    return "v2.1.1"
+
 
 def bump_version(current_tag, bump_type="patch"):
     m = re.match(r"^v?(\d+)\.(\d+)\.(\d+)$", current_tag)
