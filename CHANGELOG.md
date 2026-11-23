@@ -1,5 +1,10 @@
 
 
+## [v2.1.5] - 2026-11-23
+### Add Formal Proprietary License File
+Added official root LICENSE file declaring All Rights Reserved proprietary terms for Dhaka College Science Club web platform.
+
+
 ## [v2.1.4] - 2026-11-23
 ### Clean Removal of Obsolete License Text
 Completely removed the legacy MIT license section from README.md to ensure 100% proprietary protection.

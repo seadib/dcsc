@@ -1,46 +1,60 @@
-# 🔬 Dhaka College Science Club (DCSC) Official Web Platform
+<div align="center">
 
-[![Next.js](https://img.shields.io/badge/Next.js-16_App_Router-black?style=flat&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-blue?style=flat&logo=react)](https://react.dev/)
-[![Sanity Studio](https://img.shields.io/badge/Sanity-Studio_v3-F03E2F?style=flat&logo=sanity)](https://www.sanity.io/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
-[![License: Proprietary](https://img.shields.io/badge/License-Proprietary_/_All_Rights_Reserved-red.svg)](#)
+<img src="image/logo.png" alt="DCSC Logo" width="140">
 
+# 🔬 Dhaka College Science Club (DCSC)
 
-The official web platform and zero-code content management architecture for **Dhaka College Science Club (DCSC)** — established in 1996, one of the oldest and most prestigious collegiate science clubs in Bangladesh.
+### *Spreading the knowledge of science to the utmost since 1996*
+
+[![Website](https://img.shields.io/badge/🌐_Website-Live-00F2FE?style=for-the-badge)](https://seadib.github.io/dcsc)
+[![Admin Studio](https://img.shields.io/badge/🛠️_Admin_Studio-Live-F03E2F?style=for-the-badge&logo=sanity&logoColor=white)](https://dcsc.sanity.studio)
+[![Repository](https://img.shields.io/badge/💻_Repository-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/seadib/dcsc)
+[![License: Proprietary](https://img.shields.io/badge/🔒_License-Proprietary-red?style=for-the-badge)](#-copyright--proprietary-notice)
+
+**#ForClubAndCountry** 🇧🇩
+
+</div>
 
 ---
 
-## 🌐 Live Deployments & Dashboards
+### 🔗 Live Links:
+- 🌐 **Live Website**: https://seadib.github.io/dcsc
+- 🛠️ **Admin Dashboard**: https://dcsc.sanity.studio
+- 💻 **Repository**: https://github.com/seadib/dcsc
 
-| Service | Description | Live URL |
+---
+
+## 📖 About DCSC
+
+**Dhaka College Science Club (DCSC)** is one of the oldest and most prestigious collegiate science organizations in Bangladesh, established in **1996**. Over three decades of excellence, DCSC has nurtured generations of scientists, researchers, Olympiad champions, and innovators.
+
+This repository powers the entire official digital ecosystem of DCSC — integrating a **Next.js 16 App Router** frontend, a cloud-deployed **Sanity Studio v3** zero-code Content Management System, and the legacy interactive static web assets.
+
+---
+
+## 🚀 Modern Architecture & Key Capabilities
+
+<div align="center">
+
+| Module | Framework / Platform | Status & Live Access |
 | :--- | :--- | :--- |
-| **Live Website** | Official hosted club website on GitHub Pages | [https://seadib.github.io/dcsc](https://seadib.github.io/dcsc) |
-| **Admin Dashboard (Sanity Studio)** | Zero-code cloud CMS for managing all website content | [https://dcsc.sanity.studio](https://dcsc.sanity.studio) |
-| **GitHub Repository** | Source code, version history, and release tags | [https://github.com/seadib/dcsc](https://github.com/seadib/dcsc) |
+| **Public Frontend** | Next.js 16, React 19, Tailwind CSS v4, TypeScript | 🌐 [seadib.github.io/dcsc](https://seadib.github.io/dcsc) |
+| **Admin Dashboard** | Sanity Studio v3 (Fluid Cloud Hosting) | 🛠️ [dcsc.sanity.studio](https://dcsc.sanity.studio) |
+| **Interactive Sci-Lab** | HTML5 Physics & Chemistry Simulation Canvases | 🔬 [Interactive Hub](https://seadib.github.io/dcsc/scilab.html) |
+| **Source Repository** | GitHub Releases, Semantic Tags, Asset Tracking | 💻 [seadib/dcsc](https://github.com/seadib/dcsc) |
 
+</div>
 
----
+### ✨ Highlights
 
-## 🚀 Key Features
-
-### 🛠️ 1. Zero-Code Sanity Studio Admin Panel
-- **Page Builder**: Reorder, add, or toggle homepage sections via drag-and-drop.
-- **Executive Committee**: Manage current and past executive batches, member designations, avatars, social links, and biography popups.
-- **Honorable Moderators & Mentors**: Manage teacher profiles with administrative pause/resume visibility switches.
-- **Events & Science Fests**: Publish upcoming and past festivals with direct Facebook event integration.
-- **Wednesday Wonders & News**: Publish science digests, announcements, and articles.
-- **Club Achievements**: Record national Olympiad titles, science expo trophies, and project awards.
-- **Photo Gallery & Albums**: Multi-photo albums with automated alt tags and CDN image optimization.
-- **Digital Wall Magazine**: Interactive archives of publications and infographics.
-
-### ⚡ 2. Next.js 16 High-Performance Frontend
-- **App Router & Server-Side Rendering (SSR)** for near-instant page loads.
-- **Incremental Static Regeneration (ISR)** for high-speed delivery with real-time freshness.
-- **Tailwind CSS v4 & Lucide Icons** delivering an ultra-modern dark-themed aesthetic.
-- **Interactive Sci-Lab Hub** featuring chemistry, gravity, atom simulations, and Olympiad quizzes.
-- **Automated Dynamic SEO & OpenGraph** generator for social media previews.
+- 🎨 **Dynamic Drag-and-Drop Page Builder**: Reorder, toggle, and curate homepage hero banners, stats counters, events, posts, committee highlights, and CTA blocks directly from Sanity Studio.
+- 👥 **Executive Committee & Historical Archives**: Full interactive view for current batch (2025-26) with biography modal popups, plus archived collapsible views with carousel sliders for past batches.
+- 🎓 **Honorable Moderators & Mentors Panel**: Administrative control to manage teacher profiles with pause/resume visibility switches.
+- 🏆 **National Olympiad & Accolades Showcase**: Dedicated showcase for awards won at national Math, Physics, Earth Olympiads, and Science Fests.
+- 🖼️ **Curated Photo Gallery & Albums**: Multi-image albums (Olympiad Hunt 4.0, Grand Iftar, Intra Fest) with automated Alt-text generation and Sanity CDN image optimization.
+- 📰 **Digital Wall Magazine & Wednesday Wonders**: High-resolution archive of 25+ scientific infographic issues and research articles.
+- ⚡ **Automated Dynamic SEO & OpenGraph**: Instant metadata and social card generation across all routes.
+- 🌙 **Modern Dark Aesthetic**: Deep obsidian palette (`#080C14`), vibrant cyan accents (`#00F2FE`), and responsive typography (Orbitron, Space Grotesk, Plus Jakarta Sans).
 
 ---
 
@@ -48,58 +62,63 @@ The official web platform and zero-code content management architecture for **Dh
 
 ```text
 dcsc/
-├── studio/                     # Standalone Sanity Studio v3 CMS
-│   ├── schemaTypes/            # Content models & schemas
-│   │   ├── documents/          # batch, committeeMember, event, post, achievement, etc.
-│   │   ├── objects/            # seo, pageBuilder blocks
-│   │   └── singletons/         # homePage, siteSettings
+├── .agents/skills/             # 🤖 Workspace Automation Skills
+│   └── git-release-manager/    # Automated semantic tagging & GitHub Releases
+├── image/                      # 🖼️ High-resolution club media assets & logos
+├── studio/                     # 🛠️ Standalone Sanity Studio v3 CMS
+│   ├── schemaTypes/            # Content schemas (singletons, documents, pageBuilder)
 │   ├── sanity.config.ts        # Studio workspace configuration
-│   └── sanity.cli.ts           # Studio deployment settings (dcsc.sanity.studio)
-│
-├── web/                        # Next.js 16 App Router Frontend
+│   └── sanity.cli.ts           # Sanity CLI & cloud hosting config
+├── web/                        # ⚡ Modern Next.js 16 App Router Frontend
 │   ├── src/
 │   │   ├── app/                # Route segments (/events, /committee, /gallery, etc.)
-│   │   ├── components/         # PageBuilder blocks, Navigation, Modals, Footer
-│   │   └── lib/                # Sanity client, Image URL builder, SEO utilities
-│   └── public/                 # Static assets, fallback logos, audio
-│
-├── CHANGELOG.md                # Standardized version release history
-├── DEVELOPMENT_LOG.md          # Comprehensive issue resolution and engineering log
-└── README.md                   # Project documentation
+│   │   ├── components/         # Page builder, navbar, modals, cards
+│   │   └── lib/                # Sanity client, image URL builder, SEO helpers
+├── index.html                  # 🏛️ Original legacy static web experience
+├── achievements.html           # Static accolades mirror
+├── committee.html              # Static committee mirror
+├── events.html                 # Static events mirror
+├── gallery.html                # Static gallery mirror
+├── scilab.html                 # 🔬 Interactive virtual science labs
+├── wall-magazine.html          # 📰 Wall magazine infographics
+├── AGENTS.md                   # 📜 Agent development & release policies
+├── CHANGELOG.md                # 📝 Version-by-version release history
+├── LICENSE                     # 🔒 Official proprietary license terms
+└── README.md                   # 📖 Project documentation
 ```
 
 ---
 
-## 🛠️ Local Development Setup
+## 🛠️ Local Development
 
-### Prerequisites
-- Node.js 20+ installed
-- npm or pnpm
-
-### 1. Run Next.js Frontend
+### 1. Web Frontend (Next.js)
 ```bash
 cd web
 npm install
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) to view the Next.js application.
 
-### 2. Run Sanity Studio Locally
+### 2. Admin CMS (Sanity Studio)
 ```bash
 cd studio
 npm install
 npm run dev
 ```
-Open [http://localhost:3333](http://localhost:3333) in your browser (or use the cloud version at [dcsc.sanity.studio](https://dcsc.sanity.studio)).
+Open [http://localhost:3333](http://localhost:3333) for local development, or use the cloud version directly at [https://dcsc.sanity.studio](https://dcsc.sanity.studio).
 
 ---
 
 ## 🏷️ Release Versioning
 
-- **`v1.0.0`**: Legacy static HTML/CSS/JS website.
-- **`v2.0.0`**: Modern Next.js 16 App Router + Cloud-Deployed Sanity Studio v3 Architecture.
-
-For complete release details and engineering logs, refer to [CHANGELOG.md](file:///X:/CHANGELOG.md) and [DEVELOPMENT_LOG.md](file:///X:/DEVELOPMENT_LOG.md).
+| Tag | Date | Milestone Description |
+| :--- | :--- | :--- |
+| **`v2.1.5`** | 2026-11-23 | Formal Proprietary LICENSE file & full copyright enforcement |
+| **`v2.1.2`** | 2026-11-23 | Standardized Live Links specification across all documentation |
+| **`v2.1.0`** | 2026-11-23 | Complete content & asset synchronization (Trophies, Wall Magazines, Albums) |
+| **`v2.0.1`** | 2026-11-23 | Cloud deployment of Sanity Studio at `dcsc.sanity.studio` |
+| **`v2.0.0`** | 2026-11-23 | Next.js 16 App Router & Sanity Studio v3 monorepo architecture |
+| **`v1.0.0`** | 2026-11-08 | Original legacy static website (HTML5, CSS3, Vanilla JS, Sci-Lab) |
 
 ---
 
@@ -107,5 +126,28 @@ For complete release details and engineering logs, refer to [CHANGELOG.md](file:
 
 © 2026 Dhaka College Science Club (DCSC) & Abdullah Al Adib (seadib). All Rights Reserved.
 
-This repository, source code, media assets, design architecture, and documentation are strictly **Proprietary**. No permission is granted for public distribution, cloning, modification, commercial or non-commercial reuse without explicit prior written authorization from the author.
+This repository, its source code, design architecture, graphics, and documentation are strictly **Proprietary**. No license is granted for public distribution, copying, modification, or commercial reuse without prior written authorization from the copyright holders. Refer to [LICENSE](LICENSE) for complete legal terms.
 
+---
+
+## 👨‍💻 Engineering & Credits
+
+<div align="center">
+
+**Platform designed, engineered, and maintained by**
+
+### [Abdullah Al Adib](https://adi.pro.bd/)
+*Lead Developer & Technical Contributor • Dhaka College Science Club*
+
+[![GitHub](https://img.shields.io/badge/GitHub-seadib-181717?style=flat&logo=github)](https://github.com/seadib)
+[![Portfolio](https://img.shields.io/badge/Portfolio-adi.pro.bd-blue?style=flat)](https://adi.pro.bd/)
+
+<br>
+
+**Dhaka College Science Club (DCSC)**  
+*Est. 1996 • Mirpur Road, Dhanmondi, Dhaka-1205, Bangladesh*  
+*Spreading the knowledge of science to the utmost*
+
+**#ForClubAndCountry** 🇧🇩
+
+</div>
