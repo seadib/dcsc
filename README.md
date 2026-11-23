@@ -109,8 +109,3 @@ For complete release details and engineering logs, refer to [CHANGELOG.md](file:
 
 This repository, source code, media assets, design architecture, and documentation are strictly **Proprietary**. No permission is granted for public distribution, cloning, modification, commercial or non-commercial reuse without explicit prior written authorization from the author.
 
-
----
-
-## 📄 License
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
