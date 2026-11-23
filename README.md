@@ -122,11 +122,18 @@ Open [http://localhost:3333](http://localhost:3333) for local development, or us
 
 ---
 
-## 🔒 Copyright & Proprietary Notice
+## 🔒 Copyright & Terms of Use
 
-© 2026 Dhaka College Science Club (DCSC) & Abdullah Al Adib (seadib). All Rights Reserved.
+© 2026 Abdullah Al Adib (seadib) & Dhaka College Science Club (DCSC). All rights reserved.
 
-This repository, its source code, design architecture, graphics, and documentation are strictly **Proprietary**. No license is granted for public distribution, copying, modification, or commercial reuse without prior written authorization from the copyright holders. Refer to [LICENSE](LICENSE) for complete legal terms.
+This platform, codebase, and design architecture are developed and administered by Abdullah Al Adib for official Dhaka College Science Club (DCSC) activities. Club members, executives, and authorized contributors are fully welcome to use and collaborate on this project for club operations. External unauthorized parties unaffiliated with DCSC may not copy, clone, or redistribute this work without prior permission.
+
+For permissions or inquiries, contact:
+- ✉️ Email: `drseadib@gmail.com`
+- 🌐 Website: [seadib.github.io/dcsc](https://seadib.github.io/dcsc)
+- 🔒 Full Legal Terms: [LICENSE](LICENSE)
+
+
 
 ---
 
