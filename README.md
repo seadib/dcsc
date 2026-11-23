@@ -5,7 +5,8 @@
 [![Sanity Studio](https://img.shields.io/badge/Sanity-Studio_v3-F03E2F?style=flat&logo=sanity)](https://www.sanity.io/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38BDF8?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary_/_All_Rights_Reserved-red.svg)](#)
+
 
 The official web platform and zero-code content management architecture for **Dhaka College Science Club (DCSC)** — established in 1996, one of the oldest and most prestigious collegiate science clubs in Bangladesh.
 
@@ -99,6 +100,15 @@ Open [http://localhost:3333](http://localhost:3333) in your browser (or use the 
 - **`v2.0.0`**: Modern Next.js 16 App Router + Cloud-Deployed Sanity Studio v3 Architecture.
 
 For complete release details and engineering logs, refer to [CHANGELOG.md](file:///X:/CHANGELOG.md) and [DEVELOPMENT_LOG.md](file:///X:/DEVELOPMENT_LOG.md).
+
+---
+
+## 🔒 Copyright & Proprietary Notice
+
+© 2026 Dhaka College Science Club (DCSC) & Abdullah Al Adib (seadib). All Rights Reserved.
+
+This repository, source code, media assets, design architecture, and documentation are strictly **Proprietary**. No permission is granted for public distribution, cloning, modification, commercial or non-commercial reuse without explicit prior written authorization from the author.
+
 
 ---
 

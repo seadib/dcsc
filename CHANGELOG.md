@@ -1,5 +1,10 @@
 
 
+## [v2.1.2] - 2026-11-23
+### Standardize Live Links across Documentation and Releases
+Integrated mandatory live website link (https://seadib.github.io/dcsc), Sanity Studio admin dashboard, and GitHub repository into a unified, permanent format.
+
+
 ## [v2.1.1] - 2026-11-23
 ### Automated Git Release & Asset Management Workflow
 Introduced workspace-level Git release automation skill (.agents/skills/git-release-manager) and rules (AGENTS.md, GEMINI.md) to automatically track repository assets, bump semantic versions, tag git commits, and publish official GitHub Releases on every push.
