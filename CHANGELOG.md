@@ -1,5 +1,15 @@
 
 
+## [v2.1.4] - 2026-11-23
+### Clean Removal of Obsolete License Text
+Completely removed the legacy MIT license section from README.md to ensure 100% proprietary protection.
+
+
+## [v2.1.3] - 2026-11-23
+### Proprietary License & Copyright Protection Policy
+Removed MIT open-source license badge and established official Proprietary & All Rights Reserved copyright protection for Dhaka College Science Club.
+
+
 ## [v2.1.2] - 2026-11-23
 ### Standardize Live Links across Documentation and Releases
 Integrated mandatory live website link (https://seadib.github.io/dcsc), Sanity Studio admin dashboard, and GitHub repository into a unified, permanent format.
